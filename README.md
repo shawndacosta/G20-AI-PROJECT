@@ -1,3 +1,7 @@
+ADNANI Sirine
+DA COSTA Shawn
+OUBOUSSAD Camille-Lina
+
 # AI-Powered-Flight-Disruption-Prediction-and-Root-Cause-Analysis
 Predicting flight delays and cancellations using AI
 
