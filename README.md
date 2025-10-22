@@ -2,7 +2,7 @@ ADNANI Sirine /
 DA COSTA Shawn /
 OUBOUSSAD Camille-Lina
 
-# AI-Powered-Flight-Disruption-Prediction-and-Root-Cause-Analysis
+# AI Powered Flight Disruption Prediction and Root Cause Analysis
 Predicting flight delays and cancellations using AI
 
 This project aims to design an AI-powered system capable of predicting flight delays, estimating their duration, identifying their most likely causes, and detecting potential cancellations using operational flight data.
