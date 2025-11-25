@@ -274,13 +274,13 @@ By cleaning and structuring a large-scale dataset, building several ML models, a
 
 One important insight from our experiments is that prediction accuracy varies depending on house price range.
 
-### ✅Good accuracy on affordable and mid-range houses  
+### ✅ Good accuracy on affordable and mid-range houses  
 - These houses are *much more common* in the dataset  
 - The model has thousands of similar examples to learn from  
 - Their features (size, location, bedrooms, etc.) follow *more stable patterns*  
 - Prices vary within a smaller range, making errors less significant  
 
-### ⚠  Lower precision for luxury or unique properties  
+### ⚠ Lower precision for luxury or unique properties  
 - Luxury properties represent *less than 1% of the dataset*  
 - They are extremely diverse (unique architecture, huge land, premium locations)  
 - Prices fluctuate widely even within the same city  
