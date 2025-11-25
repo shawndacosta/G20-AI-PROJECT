@@ -10,3 +10,15 @@ This project aims to design an AI-powered system capable of estimating the marke
 The system uses AI techniques within an interactive interface where the user can select the state, city, ZIP code, and property features through a guided menu. Once the inputs are provided, the program summarizes the selected property profile and delivers a predicted price along with a local accuracy score computed from similar houses in the same area.
 
 This prototype demonstrates how artificial intelligence can enhance decision-making in the real estate sector by transforming extensive housing data into a clear, accessible, and intelligent prediction tool.
+
+Introduction
+
+Datasets
+
+Methodology
+
+Evaluation & Analysis
+
+Related Work
+
+Conclusion
