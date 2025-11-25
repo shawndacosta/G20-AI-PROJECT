@@ -1,8 +1,10 @@
-ADNANI Sirine /
-DA COSTA Shawn /
-OUBOUSSAD Camille-Lina
-
 # 🏡 AI Powered House Price Prediction System
+
+## Members:
+ - ADNANI Sirine, Computer Science, ECE Paris, sirine.adnani@edu.ece.fr
+ - DA COSTA Shawn, Computer Science, Ece Paris, shawn.dacosta@edu.ece.fr
+ - OUBOUSSAD Camille-Lina, Computer Science, ECE Paris, camillelina.ouboussad@edu.ece.fr
+
 Predicting real estate prices using machine learning
 
 This project aims to design an AI-powered system capable of estimating the market value of houses across the United States using historical real estate data. Based on a machine learning model trained on a large dataset of property listings, the system predicts selling prices from key characteristics such as location, house size, number of bedrooms, number of bathrooms, and land area.
