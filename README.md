@@ -45,3 +45,48 @@ The system then returns:
 - a *local accuracy score* based on similar houses in the same area.
 
 This introduction summarises the motivation behind the project and the expected outcome: a clear, functional, and intelligent price prediction tool.
+
+# II. Dataset
+
+## Source of the data
+
+The project is based on a large real estate dataset containing more than *2.2 million property listings* across the United States.  
+The raw file includes information such as:
+
+- listing price  
+- number of bedrooms and bathrooms  
+- lot size (acre_lot)  
+- house size (in square feet)  
+- city, state, ZIP code  
+- historical sale dates  
+
+This dataset covers a wide geographic range and includes both rural and urban areas, making it suitable for building a general prediction model.
+
+## Data cleaning process
+
+Since the raw data contained missing values, inconsistent entries, and redundant information, we performed several preprocessing steps:
+
+- *Removal of incomplete rows* (e.g., missing price, missing key features)  
+- *Numerical conversion* of relevant fields  
+- *Filtering out extreme outliers* (e.g., absurd house sizes or unrealistic acre_lot values)  
+- *Encoding of categorical features*:
+  - State → numeric label  
+  - City → target encoding based on average property prices  
+
+This allowed us to reduce the dataset from *2,226,382 rows* to *1,341,789 clean and usable entries*, improving both model performance and training time.
+
+## Final dataset structure
+
+After cleaning, the dataset used for training contains the following columns:
+
+- price — target variable  
+- bed — number of bedrooms  
+- bath — number of bathrooms  
+- acre_lot — land size  
+- city_encoded — encoded version of the city  
+- state_encoded — encoded version of the state  
+- zip_code — geographical ZIP code  
+- house_size — interior area in square feet  
+
+These features were selected because they capture both *location factors* and *property characteristics*, which are the two main determinants of real estate prices.
+
