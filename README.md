@@ -177,7 +177,7 @@ Below is a summary of the results:
 |----------------------|-------------|-------------|---------|
 | Linear Regression     | ~173,431    | ~300,203    | 0.64    |
 | LightGBM Regressor    | ~119,379    | ~228,385    | 0.79    |
-| *Random Forest*     | ~106,415| ~214,083| *0.82*|
+| *Random Forest*     | ~106,415| ~214,083| 0.82 |
 
 ➡ *Random Forest achieved the best balance of stability and accuracy*, making it the model selected for the final system.
 
