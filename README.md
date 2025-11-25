@@ -91,3 +91,72 @@ After cleaning, the dataset used for training contains the following columns:
 
 These features were selected because they capture both *location factors* and *property characteristics*, which are the two main determinants of real estate prices.
 
+# III. Methodology  
+
+## ⚙ Choice of Algorithms  
+To build an accurate price prediction system, we evaluated several machine learning models and compared their performance. Our approach combined *interpretability, **computational efficiency, and **predictive accuracy*.
+
+The following models were tested:
+
+- *Linear Regression* — simple baseline, fast but limited for non-linear price variations  
+- *Random Forest Regressor* — robust, captures non-linear relationships, performs well on mixed data  
+- *LightGBM Regressor* — gradient boosting model optimized for large datasets, very fast and able to detect complex patterns  
+
+After evaluation, *Random Forest* provided the best overall balance between stability, accuracy, and generalization on our cleaned dataset.
+
+---
+
+## 🧩 Feature Engineering  
+To maximize model performance, categorical attributes such as city and state required specific transformations:
+
+- *Label Encoding* for states → each U.S. state receives a unique numeric ID  
+- *Target Encoding* for cities → each city is encoded using the average property price observed in the dataset  
+
+This encoding strategy helps the model capture geographical price differences while avoiding excessive dimensionality.
+
+We kept the most relevant property features:
+
+- number of bedrooms  
+- number of bathrooms  
+- house size (square feet)  
+- land size (acres)  
+- ZIP code  
+- encoded city and state identifiers  
+
+These features were selected because they strongly influence real estate prices, both structurally and geographically.
+
+---
+
+## 🧠 Model Training Pipeline  
+The training process followed a clear and reproducible workflow:
+
+1. *Load the cleaned dataset*  
+2. *Split* the data into training and testing sets  
+3. *Train each model* using the same feature set  
+4. *Evaluate performance* using  
+   - MAE (Mean Absolute Error)  
+   - RMSE (Root Mean Squared Error)  
+   - R² score  
+5. *Select the best model* based on global accuracy  
+6. *Save the model* and encoders (city/state) for later inference  
+
+Thanks to this structured pipeline, the system ensures reproducibility and reliable comparison between algorithms.
+
+---
+
+## 🖥 Interactive User Interface  
+To make the system intuitive and accessible, we developed an interactive *Jupyter Notebook interface* using ipywidgets.  
+The user can select:
+
+- State ➝ filtered list of valid states  
+- City ➝ dynamically filtered by the chosen state  
+- ZIP code ➝ filtered by both state and city  
+- Property features ➝ bedrooms, bathrooms, lot size, house size  
+
+The interface then returns:
+
+- 💰 *Predicted price*  
+- 🎯 *Local accuracy score* based on similar nearby houses  
+
+This interactive step transforms the model from a purely technical tool into a user-friendly assistant for real estate estimation.
+
