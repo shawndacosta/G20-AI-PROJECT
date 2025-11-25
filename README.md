@@ -2,13 +2,11 @@ ADNANI Sirine /
 DA COSTA Shawn /
 OUBOUSSAD Camille-Lina
 
-# AI Powered Flight Disruption Prediction and Root Cause Analysis
-Predicting flight delays and cancellations using AI
+# AI Powered House Price Prediction System
+Predicting real estate prices using machine learning
 
-This project aims to design an AI-powered system capable of predicting flight delays, estimating their duration, identifying their most likely causes, and detecting potential cancellations using operational flight data.
+This project aims to design an AI-powered system capable of estimating the market value of houses across the United States using historical real estate data. Based on a machine learning model trained on a large dataset of property listings, the system predicts selling prices from key characteristics such as location, house size, number of bedrooms, number of bathrooms, and land area.
 
-Based on a machine learning model trained on real airline performance statistics, the system integrates AI techniques within an interactive command-line interface. The user can select flight characteristics such as airline, departure airport, month, and other available parameters through a guided menu.
+The system uses AI techniques within an interactive interface where the user can select the state, city, ZIP code, and property features through a guided menu. Once the inputs are provided, the program summarizes the selected property profile and delivers a predicted price along with a local accuracy score computed from similar houses in the same area.
 
-Once the inputs are provided, the program summarizes the selected flight profile and delivers several predictive results: whether the flight is likely to be delayed, whether it may be cancelled, the estimated delay duration, and the most probable cause of the delay or cancellation. For each of these outcomes, the system also provides a probability score indicating the model’s confidence in its prediction.
-
-This interactive prototype demonstrates how artificial intelligence can enhance decision-making and reliability in the aviation industry by transforming complex data analysis into an accessible, user-friendly, and intelligent tool.
+This prototype demonstrates how artificial intelligence can enhance decision-making in the real estate sector by transforming extensive housing data into a clear, accessible, and intelligent prediction tool.
