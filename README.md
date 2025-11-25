@@ -11,14 +11,11 @@ The system uses AI techniques within an interactive interface where the user can
 
 This prototype demonstrates how artificial intelligence can enhance decision-making in the real estate sector by transforming extensive housing data into a clear, accessible, and intelligent prediction tool.
 
-Introduction
+# 📑 Table of Contents
 
-Datasets
-
-Methodology
-
-Evaluation & Analysis
-
-Related Work
-
-Conclusion
+1. [Introduction](#i-introduction)
+2. [Datasets](#ii-datasets)
+3. [Methodology](#iii-methodology)
+4. [Evaluation & Analysis](#iv-evaluation--analysis)
+5. [Related Work](#v-related-work)
+6. [Conclusion](#vi-conclusion)
