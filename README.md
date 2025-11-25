@@ -220,3 +220,42 @@ Using 10 randomly sampled houses from the dataset, the system produced:
 
 This confirms that the model generalizes well across the U.S. market while still reflecting local price patterns.
 
+# V. Related Work  
+
+## 📚 Existing Studies & Approaches  
+Real estate price prediction has been widely explored in data science and machine learning.  
+Most existing studies focus on:
+
+- *Hedonic pricing models*, which analyze how each feature (size, location, rooms…) affects price  
+- *Tree-based algorithms* such as Random Forest or Gradient Boosting, recognized for their robustness on tabular data  
+- *Geographical modeling*, emphasizing the strong influence of location on housing prices  
+- *Large-scale regression systems*, similar to Zillow’s Zestimate or Redfin’s valuation engine  
+
+Our project follows this line of research by applying ML techniques to a nationwide dataset and using geographic-dependent encoding methods.
+
+---
+
+## 🛠 Tools, Libraries & Documentation Used  
+
+*Machine Learning & Data Processing*
+- pandas — data loading, cleaning, preprocessing  
+- scikit-learn — model training (Linear Regression, Random Forest)  
+- lightgbm — gradient boosting model  
+- numpy — numerical operations  
+
+*Interface Development*
+- ipywidgets — interactive menus inside Jupyter Notebook  
+- pickle — saving/loading trained models and encoders  
+
+*Project Workflow & Version Control*
+- GitHub — hosting code, notebooks, and documentation  
+- Python 3.11 — main programming language  
+
+*Documentation Consulted*
+- Official *scikit-learn documentation*  
+- LightGBM user guide  
+- Python and pandas official docs  
+- Various academic articles on housing price prediction models  
+
+These resources guided our choices, helped validate preprocessing steps, and supported model selection.
+
