@@ -20,7 +20,7 @@ This prototype demonstrates how artificial intelligence can enhance decision-mak
 5. [Related Work](#v-related-work)
 6. [Conclusion](#vi-conclusion)
 
-# ⭐ I. Introduction
+#I. Introduction
 
 ## 🎯 Motivation
 
