@@ -52,11 +52,11 @@ You will obtain a file named something like:
 
 Extract its content, and place the resulting CSV into:
 
-  your_project/data/raw/
+- your_project/data/raw/
 
 🎯 Expected final file:
 
-  data/raw/realtor-data.csv  
+- data/raw/realtor-data.csv  
 
 
 (If your file name ends differently, simply update the notebook path accordingly.)
@@ -67,22 +67,22 @@ Extract its content, and place the resulting CSV into:
 
 Create a new Python environment using VS Code or Anaconda:
 
-  conda create -n house_env python=3.10
-  conda activate house_env
+- conda create -n house_env python=3.10
+- conda activate house_env
 
 Then install the required libraries:
 
-  pip install numpy pandas scikit-learn lightgbm ipywidgets matplotlib
+- pip install numpy pandas scikit-learn lightgbm ipywidgets matplotlib
 
 Enable widgets inside Jupyter:
 
-  jupyter nbextension enable --py widgetsnbextension
+- jupyter nbextension enable --py widgetsnbextension
 
 # 🛠️ 4. Update Base Path in Every Notebook & Script
 
 Every notebook begins with:
 
-  base = r"C:\Users\YOUR_NAME\...\house_prediction"
+- base = r"C:\Users\YOUR_NAME\...\house_prediction"
 
 You must update this path to your own project folder.
 
@@ -91,10 +91,19 @@ The same applies to Python scripts inside src/.
 # 🧹 5. Prepare the Dataset (Notebook 02)
 
 Run:
-  notebooks/02-data-preparation.ipynb
+- notebooks/02-data-preparation.ipynb
 
+This notebook will:
 
+- Load the raw dataset
+- Clean missing or inconsistent rows
+- Encode states and cities
+- Generate:
 
+cleaned_house.csv
 
+house_encoder.pkl
+
+city_state_lookup.csv
 
 
