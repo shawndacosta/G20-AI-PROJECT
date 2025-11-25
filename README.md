@@ -20,7 +20,7 @@ This prototype demonstrates how artificial intelligence can enhance decision-mak
 5. [Related Work](#v-related-work)
 6. [Conclusion](#vi-conclusion)
 
-# I. Introduction
+# I. Introduction ⭐
 
 ## 🎯 Motivation
 
@@ -46,7 +46,7 @@ The system then returns:
 
 This introduction summarises the motivation behind the project and the expected outcome: a clear, functional, and intelligent price prediction tool.
 
-# 📊 II. Datasets
+# II. Datasets 📊
 
 ## 📥 Source of the data
 
