@@ -99,11 +99,21 @@ This notebook will:
 - Clean missing or inconsistent rows
 - Encode states and cities
 - Generate:
+  - cleaned_house.csv
+  - house_encoder.pkl
+  - city_state_lookup.csv
 
-cleaned_house.csv
+Output files will be saved automatically into:
 
-house_encoder.pkl
+ - data/cleaned/models/
 
-city_state_lookup.csv
+🎯 Expected generated files:
+
+- data/cleaned/cleaned_house.csv
+- data/cleaned/city_state_lookup.csv
+- models/house_encoder.pkl
+
+# 🤖 6. Train the ML Models (Notebook 03)
+
 
 
