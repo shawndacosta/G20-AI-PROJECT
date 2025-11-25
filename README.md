@@ -259,3 +259,29 @@ Our project follows this line of research by applying ML techniques to a nationw
 
 These resources guided our choices, helped validate preprocessing steps, and supported model selection.
 
+# VI. Conclusion  
+
+## 🏁 Summary of the Project  
+This project demonstrates how machine learning can be used to predict real estate prices based on both *property characteristics* and *geographical features*.  
+By cleaning and structuring a large-scale dataset, building several ML models, and designing an interactive prediction interface, we developed a system capable of generating reliable price estimates across the United States.
+
+## 🔍 Key Takeaways  
+- The *Random Forest* model provided the best performance, achieving strong accuracy on most price ranges.  
+- Location remains the most influential factor in price prediction, justifying the use of state encoding and city target encoding.  
+- The *interactive interface* greatly improves usability, enabling real-time predictions without requiring direct interaction with the model or code.  
+
+## 🚧 Limitations  
+While effective, the system still faces challenges:  
+- High-end or atypical properties can be harder to predict due to the lack of comparable data.  
+- Target encoding for cities captures average price behavior but may smooth out very localized variations.  
+- Real estate markets evolve rapidly, making periodic dataset updates essential.
+
+## 🚀 Future Improvements  
+Potential extensions include:  
+- Using *deep learning models* to capture nonlinear patterns  
+- Incorporating additional features (crime rate, school ratings, neighborhood trends)  
+- Training state-specific or region-specific models  
+- Deploying the interface as a web application for broader use  
+
+Overall, this project highlights the potential of AI to support decision-making in the real estate sector, transforming large datasets into a *practical, accessible, and intelligent prediction tool*.
+
