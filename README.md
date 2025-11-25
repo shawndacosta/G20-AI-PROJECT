@@ -268,7 +268,31 @@ By cleaning and structuring a large-scale dataset, building several ML models, a
 ## 🔍 Key Takeaways  
 - The *Random Forest* model provided the best performance, achieving strong accuracy on most price ranges.  
 - Location remains the most influential factor in price prediction, justifying the use of state encoding and city target encoding.  
-- The *interactive interface* greatly improves usability, enabling real-time predictions without requiring direct interaction with the model or code.  
+- The *interactive interface* greatly improves usability, enabling real-time predictions without requiring direct interaction with the model or code.
+
+## 📉 Model Accuracy Across Price Ranges
+
+One important insight from our experiments is that prediction accuracy varies depending on house price range.
+
+### ✅Good accuracy on affordable and mid-range houses  
+- These houses are *much more common* in the dataset  
+- The model has thousands of similar examples to learn from  
+- Their features (size, location, bedrooms, etc.) follow *more stable patterns*  
+- Prices vary within a smaller range, making errors less significant  
+
+### ⚠  Lower precision for luxury or unique properties  
+- Luxury properties represent *less than 1% of the dataset*  
+- They are extremely diverse (unique architecture, huge land, premium locations)  
+- Prices fluctuate widely even within the same city  
+- Small mistakes in features can lead to large errors in final price  
+- The model cannot learn rare or unique cases as well as common ones  
+
+As a result:  
+- A *±15,000$ error* on a 200,000$ house is normal and quite good  
+- But a *±150,000$ error* on a 2,000,000$ house is also expected  
+  because the variability of luxury markets is naturally much higher  
+
+This behavior is typical of real estate models and reflects the underlying distribution of the data, not a flaw in the algorithm.
 
 ## 🚧 Limitations  
 While effective, the system still faces challenges:  
