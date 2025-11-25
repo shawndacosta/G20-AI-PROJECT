@@ -10,7 +10,7 @@ Follow the steps carefully to reproduce the full workflow.
 
 Create the following folder structure **manually** on your computer:
 
-your_project/
+house_prediction/
 │
 ├── data/
 │ ├── raw/
@@ -48,15 +48,16 @@ Download the dataset from Kaggle:
 
 You will obtain a file named something like:
 
-- realtor-data.zip
+- realtor-data.zip or other namefile.zip
 
 Extract its content, and place the resulting CSV into:
 
-- your_project/data/raw/
+- house_prediction/data/raw/
 
 🎯 Expected final file:
 
-- data/raw/realtor-data.csv  
+- data/raw/realtor-data.csv
+- (or any similar CSV extracted from the Kaggle archive)
 
 
 (If your file name ends differently, simply update the notebook path accordingly.)
@@ -87,6 +88,7 @@ Every notebook begins with:
 - base = r"C:\Users\YOUR_NAME\...\house_prediction"
 
 You must update this path to your own project folder.
+The path must always point to the ROOT project folder (the folder containing /data, /models, /src, etc.).
 
 The same applies to Python scripts inside src/.
 
@@ -109,7 +111,8 @@ This notebook will:
 
 Output files will be saved automatically into:
 
- - data/cleaned/models/
+ - data/cleaned/
+ - models/
 
 🎯 Expected generated files:
 
@@ -162,7 +165,7 @@ This step is optional but useful for validation.
 Run:
 - notebooks/05-interface.ipynb
 
-The interface allows you to:99
+The interface allows you to:
 
 - Select the state
 - Select a city (filtered by state)
@@ -208,14 +211,14 @@ train/
 - train_house.py
 
 interface/
-- predeict_price.py
+- predict_price.py
 - build_city_state_lookup.py
 
 ---
 
 # 🧱 10. Final Project Architecture
 
-your_project/
+house_prediction/
 │
 ├── data/
 │   ├── raw/
