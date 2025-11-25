@@ -19,3 +19,29 @@ This prototype demonstrates how artificial intelligence can enhance decision-mak
 4. [Evaluation & Analysis](#iv-evaluation--analysis)
 5. [Related Work](#v-related-work)
 6. [Conclusion](#vi-conclusion)
+
+# I. Introduction
+
+## Motivation
+
+Estimating the market value of a house is a central challenge in real estate. Prices fluctuate depending on location, property characteristics, and evolving market trends. For buyers, sellers, and professionals, having a quick and reliable estimation tool can significantly improve decision-making.
+
+Our motivation was to design an accessible AI-powered system capable of predicting house prices across the United States using historical real estate data. By relying on machine learning, the system can capture hidden patterns in property listings and provide consistent estimations, even in regions where prices vary widely.
+
+## Objective
+
+The goal of this project is to develop:
+
+- A *cleaned and structured dataset* from large-scale real estate data  
+- A *machine learning model* capable of predicting house prices  
+- An *interactive interface* where the user selects:
+  - the state  
+  - the city  
+  - the ZIP code  
+  - basic property features (bedrooms, bathrooms, house size, land size)
+
+The system then returns:
+- a *predicted price*, and  
+- a *local accuracy score* based on similar houses in the same area.
+
+This introduction summarises the motivation behind the project and the expected outcome: a clear, functional, and intelligent price prediction tool.
