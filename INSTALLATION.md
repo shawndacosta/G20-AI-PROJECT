@@ -10,32 +10,32 @@ Follow the steps carefully to reproduce the full workflow.
 
 Create the following folder structure **manually** on your computer:
 
-# house_prediction
+📁 house_prediction
 
-- 📁 data/
-  - 📁 raw/
-  - 📁 cleaned/
-    
-- 📁 models/
-
-- 📁 notebooks/
-  - 📓 01-project-init.ipynb
-  - 📓 02-data-preparation.ipynb
-  - 📓 03-train-models.ipynb
-  - 📓 04-test-model.ipynb
-  - 📓 05-interface.ipynb
-
-- 📁 src/
-  - 📁 prepare/
-    - 🐍 prepare_house.py
-  - 📁 train/
-    - 🐍 train_house.py
-  - 📁 interface/
-    - 🐍 predict_price.py
-    - 🐍 build_city_state_lookup.py
-
-- 📄 README.md
-- 📄 INSTALLATION.md
+  - 📁 data/
+    - 📁 raw/
+    - 📁 cleaned/
+      
+  - 📁 models/
+  
+  - 📁 notebooks/
+    - 📓 01-project-init.ipynb
+    - 📓 02-data-preparation.ipynb
+    - 📓 03-train-models.ipynb
+    - 📓 04-test-model.ipynb
+    - 📓 05-interface.ipynb
+  
+  - 📁 src/
+    - 📁 prepare/
+      - 🐍 prepare_house.py
+    - 📁 train/
+      - 🐍 train_house.py
+    - 📁 interface/
+      - 🐍 predict_price.py
+      - 🐍 build_city_state_lookup.py
+  
+  - 📄 README.md
+  - 📄 INSTALLATION.md
 
 
 ✔️ All these files exist in the GitHub repository.  
@@ -221,36 +221,39 @@ interface/
 
 # 🧱 10. Final Project Architecture
 
-house_prediction/
-│
-├── data/
-│   ├── raw/
-│   │   └── realtor-data.csv
-│   └── cleaned/
-│       ├── cleaned_house.csv
-│       └── city_state_lookup.csv
-│
-├── models/
-│   ├── house_best_model.pkl
-│   ├── house_encoder.pkl
-│   └── house_lookup.pkl   (optional)
-│
-├── notebooks/
-│   ├── 01-project-init.ipynb
-│   ├── 02-data-preparation.ipynb
-│   ├── 03-train-models.ipynb
-│   ├── 04-test-model.ipynb
-│   └── 05-interface.ipynb
-│
-├── src/
-│   ├── prepare/prepare_house.py
-│   ├── train/train_house.py
-│   └── interface/
-│       ├── predict_price.py
-│       └── build_city_state_lookup.py
-│
-├── README.md
-└── INSTALLATION.md
+📁 house_prediction
+  
+  - 📁 data/
+    - 📁 raw/
+      - 📄 realtor-data.csv
+    - 📁 cleaned/
+      - 📄 cleaned_house.csv
+      - 📄 city_state_lookup.csv
+      
+  - 📁 models/
+      - 📄 house_best_model.pkl
+      - 📄 house_encoder.pkl
+      - 📄 house_lookup.pkl   (optional) 
+  
+  - 📁 notebooks/
+    - 📓 01-project-init.ipynb
+    - 📓 02-data-preparation.ipynb
+    - 📓 03-train-models.ipynb
+    - 📓 04-test-model.ipynb
+    - 📓 05-interface.ipynb
+  
+  - 📁 src/
+    - 📁 prepare/
+      - 🐍 prepare_house.py
+    - 📁 train/
+      - 🐍 train_house.py
+    - 📁 interface/
+      - 🐍 predict_price.py
+      - 🐍 build_city_state_lookup.py
+  
+  - 📄 README.md
+  - 📄 INSTALLATION.md
+  
 
 
 
