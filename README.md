@@ -46,7 +46,7 @@ The system then returns:
 
 This introduction summarises the motivation behind the project and the expected outcome: a clear, functional, and intelligent price prediction tool.
 
-# 📊 II. Dataset
+# 📊 II. Datasets
 
 ## 📥 Source of the data
 
