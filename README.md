@@ -160,3 +160,63 @@ The interface then returns:
 
 This interactive step transforms the model from a purely technical tool into a user-friendly assistant for real estate estimation.
 
+# IV. Evaluation & Analysis  
+
+## 📊 Model Performance Overview  
+To evaluate our machine learning models, we used three standard regression metrics:
+
+- *MAE (Mean Absolute Error)* — average absolute difference between predicted and real prices  
+- *RMSE (Root Mean Squared Error)* — penalizes large errors, useful for detecting price overestimation  
+- *R² Score* — measures how well the model explains price variability  
+
+These metrics were computed on the test set (20% of the cleaned data).
+
+Below is a summary of the results:
+
+| Model                 | MAE (↓)     | RMSE (↓)    | R² (↑)  |
+|----------------------|-------------|-------------|---------|
+| Linear Regression     | ~173,431    | ~300,203    | 0.64    |
+| LightGBM Regressor    | ~119,379    | ~228,385    | 0.79    |
+| *Random Forest*     | *~106,415| **~214,083| **0.82*|
+
+➡ *Random Forest achieved the best balance of stability and accuracy*, making it the model selected for the final system.
+
+---
+
+## 📈 Error Behavior Analysis  
+Several important observations emerged during evaluation:
+
+### 🔹 1. Small to medium-priced homes are predicted very accurately  
+For houses priced between *$100k and $500k*, the model often achieves  
+*10–20% precision*, sometimes even better.
+
+### 🔹 2. Higher-priced homes increase prediction difficulty  
+For luxury properties (+$1M), variability becomes much larger:
+
+- wider architectural diversity  
+- unique features not captured in our dataset  
+- fewer training examples in these ranges  
+
+This leads to occasional *$150k–$300k prediction gaps*, which is expected for this market segment.
+
+---
+
+## 🧭 Local Accuracy Indicator  
+To improve interpretability during user testing, we added a *local accuracy score*:
+
+- It measures how close the prediction is to real prices of *similar houses in the same geographic area*.
+- It is calculated by comparing the predicted price with the mean price of nearby properties.
+
+This helps users understand whether their specific prediction is within a reasonable range for the region.
+
+---
+
+## 🧪 Real-World Testing  
+Using 10 randomly sampled houses from the dataset, the system produced:
+
+- very accurate predictions for common homes  
+- stable behavior across states  
+- understandable deviations for atypical or luxury properties  
+
+This confirms that the model generalizes well across the U.S. market while still reflecting local price patterns.
+
