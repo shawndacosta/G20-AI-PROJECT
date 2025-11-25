@@ -13,26 +13,29 @@ Create the following folder structure **manually** on your computer:
 house_prediction/
 │
 ├── data/
-│ ├── raw/
-│ └── cleaned/
+│   ├── raw/
+│   └── cleaned/
 │
 ├── models/
 │
 ├── notebooks/
-│ ├── 01-project-init.ipynb
-│ ├── 02-data-preparation.ipynb
-│ ├── 03-train-models.ipynb
-│ ├── 04-test-model.ipynb
-│ ├── 05-interface.ipynb
+│   ├── 01-project-init.ipynb
+│   ├── 02-data-preparation.ipynb
+│   ├── 03-train-models.ipynb
+│   ├── 04-test-model.ipynb
+│   └── 05-interface.ipynb
 │
 ├── src/
-│ ├── prepare/
-│ │ └── prepare_house.py
-│ ├── train/
-│ │ └── train_house.py
-│ └── interface/
-│ ├── predict_price.py
-│ └── build_city_state_lookup.py
+│   ├── prepare/
+│   │   └── prepare_house.py
+│   ├── train/
+│   │   └── train_house.py
+│   └── interface/
+│       ├── predict_price.py
+│       └── build_city_state_lookup.py
+│
+└── README.md
+
 
 
 ✔️ All these files exist in the GitHub repository.  
