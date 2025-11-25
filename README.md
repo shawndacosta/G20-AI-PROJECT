@@ -20,15 +20,15 @@ This prototype demonstrates how artificial intelligence can enhance decision-mak
 5. [Related Work](#v-related-work)
 6. [Conclusion](#vi-conclusion)
 
-# I. Introduction
+# ⭐ I. Introduction
 
-## Motivation
+## 🎯 Motivation
 
 Estimating the market value of a house is a central challenge in real estate. Prices fluctuate depending on location, property characteristics, and evolving market trends. For buyers, sellers, and professionals, having a quick and reliable estimation tool can significantly improve decision-making.
 
 Our motivation was to design an accessible AI-powered system capable of predicting house prices across the United States using historical real estate data. By relying on machine learning, the system can capture hidden patterns in property listings and provide consistent estimations, even in regions where prices vary widely.
 
-## Objective
+## 🎯 Objective
 
 The goal of this project is to develop:
 
@@ -46,36 +46,37 @@ The system then returns:
 
 This introduction summarises the motivation behind the project and the expected outcome: a clear, functional, and intelligent price prediction tool.
 
-# II. Dataset
+# 📊 II. Dataset
 
-## Source of the data
+## 📥 Source of the data
 
 The project is based on a large real estate dataset containing more than *2.2 million property listings* across the United States.  
 The raw file includes information such as:
 
-- listing price  
-- number of bedrooms and bathrooms  
-- lot size (acre_lot)  
-- house size (in square feet)  
-- city, state, ZIP code  
-- historical sale dates  
+- 🏷 listing price  
+- 🛏 number of bedrooms 
+- 🚿 number of bathrooms 
+- 🌱 lot size (acre_lot) 
+- 📐 house size (square feet)  
+- 📍 city, state, ZIP code
+- 🗓 historical sale dates 
 
 This dataset covers a wide geographic range and includes both rural and urban areas, making it suitable for building a general prediction model.
 
-## Data cleaning process
+## 🧹 Data cleaning process
 
 Since the raw data contained missing values, inconsistent entries, and redundant information, we performed several preprocessing steps:
 
-- *Removal of incomplete rows* (e.g., missing price, missing key features)  
-- *Numerical conversion* of relevant fields  
-- *Filtering out extreme outliers* (e.g., absurd house sizes or unrealistic acre_lot values)  
-- *Encoding of categorical features*:
+- ❌ *Removal of incomplete rows* (e.g., missing price, missing key features)  
+- 🔢 *Numerical conversion* of relevant fields  
+- ✂️ *Filtering out extreme outliers* (e.g., absurd house sizes or unrealistic acre_lot values)  
+- 🔄 *Encoding of categorical features*:
   - State → numeric label  
   - City → target encoding based on average property prices  
 
 This allowed us to reduce the dataset from *2,226,382 rows* to *1,341,789 clean and usable entries*, improving both model performance and training time.
 
-## Final dataset structure
+## 🧱 Final dataset structure
 
 After cleaning, the dataset used for training contains the following columns:
 
