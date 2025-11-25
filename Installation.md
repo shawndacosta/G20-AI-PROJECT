@@ -48,7 +48,7 @@ Download the dataset from Kaggle:
 
 You will obtain a file named something like:
 
-  realtor-data.zip
+-realtor-data.zip
 
 Extract its content, and place the resulting CSV into:
 
