@@ -5,8 +5,6 @@
  - DA COSTA Shawn, Computer Science, Ece Paris, shawn.dacosta@edu.ece.fr
  - OUBOUSSAD Camille-Lina, Computer Science, ECE Paris, camillelina.ouboussad@edu.ece.fr
 
-### 🎬 Video link: https://youtu.be/TYCphUGOSF8?si=cutT2IXbwJFMgerZ
-
 # Predicting real estate prices using machine learning
 
 This project aims to design an AI-powered system capable of estimating the market value of houses across the United States using historical real estate data. Based on a machine learning model trained on a large dataset of property listings, the system predicts selling prices from key characteristics such as location, house size, number of bedrooms, number of bathrooms, and land area.
@@ -23,6 +21,8 @@ This prototype demonstrates how artificial intelligence can enhance decision-mak
 4. [Evaluation & Analysis](#iv-evaluation--analysis)
 5. [Related Work](#v-related-work)
 6. [Conclusion](#vi-conclusion)
+
+### 🎬 Video link: https://youtu.be/TYCphUGOSF8?si=cutT2IXbwJFMgerZ
 
 # I. Introduction 
 
