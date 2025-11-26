@@ -5,7 +5,7 @@
  - DA COSTA Shawn, Computer Science, Ece Paris, shawn.dacosta@edu.ece.fr
  - OUBOUSSAD Camille-Lina, Computer Science, ECE Paris, camillelina.ouboussad@edu.ece.fr
 
-### 🎬 Video link:
+### 🎬 Video link: https://youtu.be/TYCphUGOSF8?si=cutT2IXbwJFMgerZ
 
 # Predicting real estate prices using machine learning
 
