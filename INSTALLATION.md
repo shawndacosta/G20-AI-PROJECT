@@ -39,7 +39,7 @@ Create the following folder structure **manually** on your computer:
 
 
 ✔️ All these files exist in the GitHub repository.  
-You only need to **recreate the same folders** and **place each file in the correct folder**.
+Just **recreate the folders** and **place the files in the right locations**.
 
 ---
 
@@ -63,7 +63,7 @@ Extract its content, and place the resulting CSV into:
 - (or any similar CSV extracted from the Kaggle archive)
 
 
-(If your file name ends differently, simply update the notebook path accordingly.)
+If your CSV has a different name, just update the path in the notebooks.
 
 ---
 
@@ -74,7 +74,7 @@ Create a new Python environment using VS Code or Anaconda:
 - conda create -n house_env python=3.10
 - conda activate house_env
 
-Then install the required libraries:
+Next, install the necessary Python libraries:
 
 - pip install numpy pandas scikit-learn lightgbm ipywidgets matplotlib
 
@@ -90,8 +90,8 @@ Every notebook begins with:
 
 - base = r"C:\Users\YOUR_NAME\...\house_prediction"
 
-You must update this path to your own project folder.
-The path must always point to the ROOT project folder (the folder containing /data, /models, /src, etc.).
+Update this path to point to your project folder. 
+It should always refer to the ROOT folder containing /data, /models, /src, etc.
 
 The same applies to Python scripts inside src/.
 
@@ -105,8 +105,8 @@ Run:
 This notebook will:
 
 - Load the raw dataset
-- Clean missing or inconsistent rows
-- Encode states and cities
+- Clean any missing or inconsistent data
+- Encode state and city information
 - Generate:
   - cleaned_house.csv
   - house_encoder.pkl
@@ -139,7 +139,7 @@ This notebook will:
   - Linear Regression
   - Random Forest
   - LightGBM
-- Compare MAE, RMSE and R²
+- Compare the MAE, RMSE, and R² scores
 - Save the best one automatically
 
 🎯 Expected output file:
@@ -159,7 +159,7 @@ This notebook will:
 - Displays real price vs predicted price
 - Gives you an idea of model accuracy across price ranges
 
-This step is optional but useful for validation.
+This optional step helps you check the model’s predictions.
 
 ---
 
@@ -179,7 +179,7 @@ The interface allows you to:
   - lot size
   - house size
 
-Then the system predicts:
+The system will then provide:
 
 - 🏡 House Price
 - 🎯 Local Accuracy Score (%)
@@ -193,7 +193,7 @@ This notebook uses:
 
 # 📦 9. Required Project Files
 
-To run the full project, you need:
+These files are needed to run the project:
 
 ## Notebooks
 
