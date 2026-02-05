@@ -98,7 +98,7 @@ These features were selected because they capture both *location factors* and *p
 # III. Methodology  
 
 ## ⚙ Choice of Algorithms  
-To build an accurate price prediction system, we evaluated several machine learning models and compared their performance. Our approach combined *interpretability, **computational efficiency, and **predictive accuracy*.
+To build an accurate price prediction system, we evaluated several machine learning models and compared their performance. Our approach focused on clarity, efficiency, and predictive accuracy.
 
 The following models were tested:
 
@@ -116,7 +116,7 @@ To maximize model performance, categorical attributes such as city and state req
 - *Label Encoding* for states → each U.S. state receives a unique numeric ID  
 - *Target Encoding* for cities → each city is encoded using the average property price observed in the dataset  
 
-This encoding strategy helps the model capture geographical price differences while avoiding excessive dimensionality.
+This approach lets the model account for regional price differences without adding too many extra features.
 
 We kept the most relevant property features:
 
@@ -162,7 +162,7 @@ The interface then returns:
 - 💰 *Predicted price*  
 - 🎯 *Local accuracy score* based on similar nearby houses  
 
-This interactive step transforms the model from a purely technical tool into a user-friendly assistant for real estate estimation.
+This step makes the model easy to use, turning it into a friendly tool for real estate estimation.
 
 # IV. Evaluation & Analysis  
 
@@ -201,15 +201,14 @@ For luxury properties (+$1M), variability becomes much larger:
 - unique features not captured in our dataset  
 - fewer training examples in these ranges  
 
-This leads to occasional *$150k–$300k prediction gaps*, which is expected for this market segment.
-
+Occasional $150k–$300k prediction gaps happen naturally in this segment.
 ---
 
 ## 🧭 Local Accuracy Indicator  
 To improve interpretability during user testing, we added a *local accuracy score*:
 
 - It measures how close the prediction is to real prices of *similar houses in the same geographic area*.
-- It is calculated by comparing the predicted price with the mean price of nearby properties.
+- It compares the predicted price with the average of similar nearby properties.
 
 This helps users understand whether their specific prediction is within a reasonable range for the region.
 
@@ -228,9 +227,9 @@ This confirms that the model generalizes well across the U.S. market while still
 
 ## 📚 Existing Studies & Approaches  
 Real estate price prediction has been widely explored in data science and machine learning.  
-Most existing studies focus on:
+Most studies look at:
 
-- *Hedonic pricing models*, which analyze how each feature (size, location, rooms…) affects price  
+- *Hedonic pricing models*, analyzing how each feature (size, location, rooms…) influences price 
 - *Tree-based algorithms* such as Random Forest or Gradient Boosting, recognized for their robustness on tabular data  
 - *Geographical modeling*, emphasizing the strong influence of location on housing prices  
 - *Large-scale regression systems*, similar to Zillow’s Zestimate or Redfin’s valuation engine  
@@ -271,8 +270,8 @@ By cleaning and structuring a large-scale dataset, building several ML models, a
 
 ## 🔍 Key Takeaways  
 - The *Random Forest* model provided the best performance, achieving strong accuracy on most price ranges.  
-- Location remains the most influential factor in price prediction, justifying the use of state encoding and city target encoding.  
-- The *interactive interface* greatly improves usability, enabling real-time predictions without requiring direct interaction with the model or code.
+- Location is the key factor, which is why we use state and city encoding.
+- The interactive interface makes it easy to get predictions in real time, without touching the code.
 
 ## 📉 Model Accuracy Across Price Ranges
 
