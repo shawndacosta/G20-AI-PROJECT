@@ -30,14 +30,14 @@ This prototype demonstrates how artificial intelligence can enhance decision-mak
 
 Estimating the market value of a house is a central challenge in real estate. Prices fluctuate depending on location, property characteristics, and evolving market trends. For buyers, sellers, and professionals, having a quick and reliable estimation tool can significantly improve decision-making.
 
-Our motivation was to design an accessible AI-powered system capable of predicting house prices across the United States using historical real estate data. By relying on machine learning, the system can capture hidden patterns in property listings and provide consistent estimations, even in regions where prices vary widely.
+Our motivation was to create an easy-to-use AI system that estimates house prices using historical real estate data across the U.S.
 
 ## 🎯 Objective
 
 The goal of this project is to develop:
 
 - A *cleaned and structured dataset* from large-scale real estate data  
-- A *machine learning model* capable of predicting house prices  
+- A *machine learning model* for estimating property values  
 - An *interactive interface* where the user selects:
   - the state  
   - the city  
@@ -74,7 +74,7 @@ Since the raw data contained missing values, inconsistent entries, and redundant
 - ❌ *Removal of incomplete rows* (e.g., missing price, missing key features)  
 - 🔢 *Numerical conversion* of relevant fields  
 - ✂️ *Filtering out extreme outliers* (e.g., absurd house sizes or unrealistic acre_lot values)  
-- 🔄 *Encoding of categorical features*:
+- 🔄 *Converting categorical features to numbers*:
   - State → numeric label  
   - City → target encoding based on average property prices  
 
